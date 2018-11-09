@@ -36,12 +36,13 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-		var int = document.getElementById("entrybutton");
-		int.addEvetListener("click", click);
+		var intbutton = document.getElementById("entrybutton");
+		intbutton.addEventListener("click", click);
 		function click(){
-			var enter = document.getElementById("entryinput").value;
+			var intEnter = document.getElementById("entryinput").value;
+			alert("Kelly Perez:" + intEnter );
+			document.getElementById("textoutput").innerHTML = intEnter;
 		}
-		
 	</script>
 </body>
 </html>
